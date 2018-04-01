@@ -11,5 +11,11 @@ If you think this guide is helpful, please show some ❤ with some xmr
 
 What you'll need:
 You can do this on a windows system or linux as long as you have a gui
-virtualbox https://www.virtualbox.org/wiki/Downloads
-archlinux iso https://www.archlinux.org/download/
+
+<ul>
+  <li>virtualbox https://www.virtualbox.org/wiki/Downloads</li>
+  <li>archlinux iso https://www.archlinux.org/download/</li>
+  <li>In the end you'll need a "thumb drive" or a hard drive
+</ul>
+
+Everything will be in the steps
