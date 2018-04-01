@@ -31,7 +31,7 @@ As mentioned before this is a work in progress.  So, I am actually using this fo
   <li>By default virtualbox sets a "CD/DVD" in IDE.  Add the iso for archlinux there</li>
   <li>Boot the system -> Boot Arch Linux</li>
   <li>You'll very quickly be at a command prompt with root access.</li>
-  <li>"wget archfi.sf.net/archfi"</li>
+  <li>"wget archfi.sf.net/archfi" https://github.com/MatMoul/archfi</li>
   <li>"sh archfi"</li>
   <li>Follow through the options (more detail coming)</li>
 </ul>
