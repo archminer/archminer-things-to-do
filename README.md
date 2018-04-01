@@ -15,7 +15,24 @@ You can do this on a windows system or linux as long as you have a gui
 <ul>
   <li>virtualbox https://www.virtualbox.org/wiki/Downloads</li>
   <li>archlinux iso https://www.archlinux.org/download/</li>
-  <li>In the end you'll need a "thumb drive" or a hard drive
+  <li>In the end you'll need a "thumb drive" or a hard drive</li>
 </ul>
 
-Everything will be in the steps
+Everything else will be in the steps.
+
+As mentioned before this is a work in progress.  So, I am actually using this for taking notes LOL, If you notice any issues please post as an issue :) Thank you, I'll try my best to keep up.
+
+<b>STEPS:</b>
+<ul>
+  <li>Install virtualbox</li>
+  <li>Download archlinux iso</li>
+  <li>Create a new virtual machine.</li>
+  <li>Create a virtual drive for the machine as small as possible, I am suggesting with 8gb.  But, as long as you have a drive that is larger or the same size your ok. Do not set it as dynamic. In virtualbox, set the drive as a regular SATA drive.</li>
+  <li>By default virtualbox sets a "CD/DVD" in IDE.  Add the iso for archlinux there</li>
+  <li>Boot the system -> Boot Arch Linux</li>
+  <li>You'll very quickly be at a command prompt with root access.</li>
+  <li>"wget archfi.sf.net/archfi"</li>
+  <li>"sh archfi"</li>
+  <li>Follow through the options (more detail coming)</li>
+</ul>
+
