@@ -39,7 +39,7 @@ As mentioned before this is a work in progress.  So, I am actually using this fo
   <li>"pacman -Sy sudo openssh git</li>
   <li>"useradd miner"</li> 
   <li>"passwd miner"</li>
-  <li>mkhomedir_helper miner</li>
+  <li>"mkhomedir_helper miner"</li>
   <li>"visudo"</li>
   <li>Under the line "root ALL=(ALL) ALL" add </br>"miner ALL=(ALL) ALL"</li>
   <li>save and exit</li>
@@ -49,7 +49,7 @@ As mentioned before this is a work in progress.  So, I am actually using this fo
   <li>Start the socket service.</br>"systemctl start sshd.socket"</br>Enable the socket service to run on boot.</br>"systemctl enable sshd.socket"</li>
  <li>"ip address show"
  <li>connect via ssh client using the ip shown and the added user miner.</li>
-  <li>install yaourt, this will make your life much easier! https://archlinux.fr/yaourt-en </br></li>
+  <li>install yaourt, this will make your life much easier! https://archlinux.fr/yaourt-en </br>"git clone https://aur.archlinux.org/package-query.git"</br>"cd package-query"</br>"makepkg -si"</br>"cd .."</br>"git clone https://aur.archlinux.org/yaourt.git"</br>"cd yaourt"</br>"makepkg -si"</br>"cd .."</li>
  <li>
-<</ul>
+</ul>
 
