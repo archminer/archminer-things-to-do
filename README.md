@@ -36,7 +36,7 @@ As mentioned before this is a work in progress.  So, I am actually using this fo
   <li>Follow through the options (more detail coming) There is no need to install archdi which helps setup a gui interface</li>
   <li>After your done reboot. And remove the iso image from the virtual machine. Hopefully your system starts nicely.</li>
   <li>You will be have a login waiting for you.  Next login with root and the password you created.</li>
-  <li>"pacman -Sy sudo openssh git</li>
+  <li>"pacman -Sy sudo openssh git yajl base-devel</li>
   <li>"useradd miner"</li> 
   <li>"passwd miner"</li>
   <li>"mkhomedir_helper miner"</li>
