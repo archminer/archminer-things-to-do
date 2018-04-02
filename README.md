@@ -27,7 +27,7 @@ As mentioned before this is a work in progress.  So, I am actually using this fo
   <li>Install virtualbox</li>
   <li>Download archlinux iso</li>
   <li>Create a new virtual machine.</li>
-  <li>Create a virtual drive for the machine as small as possible, I am suggesting with 8gb.  But, as long as you have a drive that is larger or the same size your ok. Do not set it as dynamic. In virtualbox, set the drive as a regular SATA drive.</li>
+  <li>Create a virtual drive for the machine as small as possible, I am suggesting with 12gb.  But, as long as you have a drive that is larger or the same size your ok. Do not set it as dynamic. In virtualbox, set the drive as a regular SATA drive.</li>
   <li>By default virtualbox sets a "CD/DVD" in IDE.  Add the iso for archlinux there.  I would strongly suggest changing the network to bridged, this way you can login from your host computer or another computer on your network.</li>
   <li>Boot the system -> Boot Arch Linux</li>
   <li>You'll very quickly be at a command prompt with root access.</li>
@@ -50,5 +50,6 @@ As mentioned before this is a work in progress.  So, I am actually using this fo
  <li>"ip address show"
  <li>connect via ssh client using the ip shown and the added user miner.</li>
   <li>install yaourt, this will make your life much easier! https://archlinux.fr/yaourt-en </br>"git clone https://aur.archlinux.org/package-query.git"</br>"cd package-query"</br>"makepkg -si"</br>"cd .."</br>"git clone https://aur.archlinux.org/yaourt.git"</br>"cd yaourt"</br>"makepkg -si"</br>"cd .."</li>
- <li>
+ <li>"mkdir opencl-amd</br>cd opencl-amd"</br>"wget https://raw.githubusercontent.com/archminer/archminer-things-to-do/master/opencl-amd/PKGBUILD"</br>"makepkg -si"</li>
+<li>"yaourt xmr-stak-git"</li>
 </ul>
