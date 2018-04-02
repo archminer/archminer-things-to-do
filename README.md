@@ -28,11 +28,28 @@ As mentioned before this is a work in progress.  So, I am actually using this fo
   <li>Download archlinux iso</li>
   <li>Create a new virtual machine.</li>
   <li>Create a virtual drive for the machine as small as possible, I am suggesting with 8gb.  But, as long as you have a drive that is larger or the same size your ok. Do not set it as dynamic. In virtualbox, set the drive as a regular SATA drive.</li>
-  <li>By default virtualbox sets a "CD/DVD" in IDE.  Add the iso for archlinux there</li>
+  <li>By default virtualbox sets a "CD/DVD" in IDE.  Add the iso for archlinux there.  I would strongly suggest changing the network to bridged, this way you can login from your host computer or another computer on your network.</li>
   <li>Boot the system -> Boot Arch Linux</li>
   <li>You'll very quickly be at a command prompt with root access.</li>
   <li>"wget archfi.sf.net/archfi" https://github.com/MatMoul/archfi</li>
   <li>"sh archfi"</li>
-  <li>Follow through the options (more detail coming)</li>
-</ul>
+  <li>Follow through the options (more detail coming) There is no need to install archdi which helps setup a gui interface</li>
+  <li>After your done reboot. And remove the iso image from the virtual machine. Hopefully your system starts nicely.</li>
+  <li>You will be have a login waiting for you.  Next login with root and the password you created.</li>
+  <li>"pacman -Sy sudo openssh git</li>
+  <li>"useradd miner"</li> 
+  <li>"passwd miner"</li>
+  <li>mkhomedir_helper miner</li>
+  <li>"visudo"</li>
+  <li>Under the line "root ALL=(ALL) ALL" add </br>"miner ALL=(ALL) ALL"</li>
+  <li>save and exit</li>
+  <li>"vi /etc/ssh/sshd_config"
+  <li>add the line "AllowUsers miner" and a seperate line for "PermitRootLogin no"
+  <li>uncomment "Port 22</li>
+  <li>Start the socket service.</br>"systemctl start sshd.socket"</br>Enable the socket service to run on boot.</br>"systemctl enable sshd.socket"</li>
+ <li>"ip address show"
+ <li>connect via ssh client using the ip shown and the added user miner.</li>
+  <li>install yaourt, this will make your life much easier! https://archlinux.fr/yaourt-en </br></li>
+ <li>
+<</ul>
 
